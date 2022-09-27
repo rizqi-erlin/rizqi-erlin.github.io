@@ -522,7 +522,7 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 1.5;
   font-weight: normal;
   color: #fbf35e;
-  font-family: "Satisfy", Arial, serif;
+  font-family: "Oswald", Arial, serif;
 }
 @media screen and (max-width: 480px) {
   #overlay .content h1 {
