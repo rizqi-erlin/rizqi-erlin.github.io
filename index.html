@@ -465,9 +465,9 @@
 					<span style="color: #bf9b73">Untuk tamu undangan yang mau mengirimkan gift bisa ke alamat berikut.</span>
 					<p style="font-family: 'Courgette', Arial, serif">Alamat : Serpong Garden 1 - Cluster Green Studentia Blok C24 no. 3, Tangerang Selatan</p>
 					<p style="font-family: 'Courgette', Arial, serif">Atau</p>
-					<p style="font-family: 'Courgette', Arial, serif">Rekening BCA a.n. Muhammad Bahar Rizqii</p></p>
+					<p style="font-family: 'Courgette', Arial, serif">Rekening BCA a.n. Muhammad Bahar Rizqi</p></p>
 						<div class="thumbnail text-box">
-							<div id="text-copy">
+							<div id="text-copy1">
 								6801235767
 							</div>
 							<button class="btn btn-xs btn-copy btn-primary">
@@ -476,7 +476,7 @@
 						</div>	
 					<p style="font-family: 'Courgette', Arial, serif">Rekening Mandiri a.n. Erlinda Marella Mahardika</p></p>
 						<div class="thumbnail text-box">
-							<div id="text-copy">
+							<div id="text-copy2">
 								1420018011873
 							</div>
 							<button class="btn btn-xs btn-copy btn-primary">
@@ -642,7 +642,20 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('.btn-copy').on("click", function(){
-            var value = $('#text-copy').text();
+            var value = $('#text-copy1').text();
+           
+            var $tempCopy = $("<input>");
+                $("body").append($tempCopy);
+                $tempCopy.val(value).select();
+                document.execCommand("copy");
+                $tempCopy.remove();
+        })
+    })
+</script> 
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.btn-copy').on("click", function(){
+            var value = $('#text-copy2').text();
            
             var $tempCopy = $("<input>");
                 $("body").append($tempCopy);
