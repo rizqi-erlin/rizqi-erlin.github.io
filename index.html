@@ -642,11 +642,11 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('.btn-copy').on("click", function(){
-            var value = $('#text-copy1').text();
+            var value1 = $('#text-copy1').text();
            
             var $tempCopy = $("<input>");
                 $("body").append($tempCopy);
-                $tempCopy.val(value).select();
+                $tempCopy.val(value1).select();
                 document.execCommand("copy");
                 $tempCopy.remove();
         })
@@ -655,11 +655,11 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('.btn-copy').on("click", function(){
-            var value = $('#text-copy2').text();
+            var value2 = $('#text-copy2').text();
            
             var $tempCopy = $("<input>");
                 $("body").append($tempCopy);
-                $tempCopy.val(value).select();
+                $tempCopy.val(value2).select();
                 document.execCommand("copy");
                 $tempCopy.remove();
         })
