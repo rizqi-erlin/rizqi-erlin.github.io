@@ -2370,6 +2370,9 @@ button.btn-copy2{
 button.btn-copy:hover{
   background-color: #419641;
 }
+button.btn-copy2:hover{
+  background-color: #419641;
+}
 input#code:focus {
   outline: none!important;
 }
