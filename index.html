@@ -465,7 +465,7 @@
 					<span style="color: #bf9b73">Untuk tamu undangan yang mau mengirimkan gift bisa ke alamat berikut.</span>
 					<p style="font-family: 'Courgette', Arial, serif">Alamat : Serpong Garden 1 - Cluster Green Studentia Blok C24 no. 3, Tangerang Selatan</p>
 					<p style="font-family: 'Courgette', Arial, serif">Atau</p>
-					<p style="font-family: 'Courgette', Arial, serif">Rekening BCA a.n. Muhammad Bahar Rizqii2</p></p>
+					<p style="font-family: 'Courgette', Arial, serif">Rekening BCA a.n. Muhammad Bahar Rizqi21</p></p>
 						<div class="thumbnail text-box">
 							<div id="text-copy1">
 								6801235767
@@ -643,13 +643,12 @@
     $(document).ready(function(){
         $('.btn-copy').on("click", function(){
             var value1 = $('#text-copy1').text();
-			var value2 = $('#text-copy2').text();
-            var $tempCopy = $("<input>");
-                $("body").append($tempCopy);
-				$tempCopy.val(value1).select();
-				$tempCopy.val(value2).select();
+			
+            var $tempCopy1 = $("<input>");
+                $("body").append($tempCopy1);
+				$tempCopy1.val(value1).select();
                 document.execCommand("copy");
-                $tempCopy.remove();
+                $tempCopy1.remove();
         })
 	})
 </script> 
