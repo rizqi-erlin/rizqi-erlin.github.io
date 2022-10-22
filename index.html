@@ -474,12 +474,12 @@
 								<span class="fa fa-copy"></span>
 							</button>
 						</div>	
-					<p style="font-family: 'Courgette', Arial, serif">Rekening Mandiri a.n. Erlinda Marella Mahardika</p></p>
+					<p style="font-family: 'Courgette', Arial, serif">Rekening Mandiri a.n. Erlinda Marella Mahardika1</p></p>
 						<div class="thumbnail text-box">
 							<div id="text-copy2">
 								1420018011873
 							</div>
-							<button class="btn btn-xs btn-copy btn-primary">
+							<button class="btn btn-xs btn-copy2 btn-primary">
 								<span class="fa fa-copy"></span>
 							</button>
 						</div>	
@@ -639,6 +639,7 @@
 //}
 </script>
 <!-- jadinya pake ini gak jadi pake yang diatas-->
+
 <script type="text/javascript">
     $(document).ready(function(){
         $('.btn-copy').on("click", function(){
@@ -649,6 +650,20 @@
 				$tempCopy1.val(value1).select();
                 document.execCommand("copy");
                 $tempCopy1.remove();
+        })
+	})
+</script> 
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.btn-copy2').on("click", function(){
+            var value2 = $('#text-copy2').text();
+			
+            var $tempCopy2 = $("<input>");
+                $("body").append($tempCopy2);
+				$tempCopy2.val(value2).select();
+                document.execCommand("copy");
+                $tempCopy2.remove();
         })
 	})
 </script> 
